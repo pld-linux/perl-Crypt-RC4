@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Crypt
-%define		pnam	RC4
+%define	pdir	Crypt
+%define	pnam	RC4
 Summary:	Crypt::RC4 Perl module - RC4 encryption algorithm implementation
 Summary(pl):	Modu³ Perla Crypt::RC4 - implementacja algorytmu szyfrowania RC4
 Name:		perl-Crypt-RC4

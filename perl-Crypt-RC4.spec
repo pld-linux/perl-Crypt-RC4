@@ -1,0 +1,50 @@
+%include	/usr/lib/rpm/macros.perl
+%define		pdir	Crypt
+%define		pnam	RC4
+Summary:	Crypt::RC4 Perl module - RC4 encryption algorithm implementation
+Summary(pl):	Modu³ Perla Crypt::RC4 - implementacja algorytmu szyfrowania RC4
+Name:		perl-Crypt-RC4
+Version:	2.02
+Release:	1
+License:	Artistic or GPL
+Group:		Development/Languages/Perl
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+BuildRequires:	perl >= 5.6
+BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%description
+A simple implementation of the RC4 algorithm. RC4 is a stream cipher
+designed by Rivest for RSA Data Security (now RSA Security). It is a
+variablekey-size stream cipher with byte-oriented operations. The
+algorithm is based on the use of a random permutation.
+
+%description -l pl
+Prosta implementacja algorytmu RC4. RC4 jest szyfrem strumieniowym
+opracowanym przez Rivesta dla RSA Data Security (teraz RSA Security).
+Jest to szyfr strumieniowy o zmiennej d³ugo¶ci klucza z operacjami
+zorientowanymi na bajty. Bazuje na u¿ywaniu losowych permutacji.
+
+%prep
+%setup -q -n %{pdir}-%{pnam}-%{version}
+
+%build
+perl Makefile.PL
+%{__make}
+%{__make} test
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(644,root,root,755)
+%doc Changes
+%{perl_sitelib}/Crypt/RC4.pm
+%{_mandir}/man3/*

@@ -6,7 +6,8 @@ Summary(pl):	Modu³ Perla Crypt::RC4 - implementacja algorytmu szyfrowania RC4
 Name:		perl-Crypt-RC4
 Version:	2.02
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v2+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4ca59a7e58ac9597c3b4f3f46ea22629

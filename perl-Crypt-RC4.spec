@@ -5,12 +5,12 @@ Summary:	Crypt::RC4 Perl module - RC4 encryption algorithm implementation
 Summary(pl):	Modu³ Perla Crypt::RC4 - implementacja algorytmu szyfrowania RC4
 Name:		perl-Crypt-RC4
 Version:	2.02
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

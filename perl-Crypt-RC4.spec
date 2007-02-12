@@ -2,7 +2,7 @@
 %define		pdir	Crypt
 %define		pnam	RC4
 Summary:	Crypt::RC4 Perl module - RC4 encryption algorithm implementation
-Summary(pl):	Modu≥ Perla Crypt::RC4 - implementacja algorytmu szyfrowania RC4
+Summary(pl.UTF-8):   Modu≈Ç Perla Crypt::RC4 - implementacja algorytmu szyfrowania RC4
 Name:		perl-Crypt-RC4
 Version:	2.02
 Release:	3
@@ -22,11 +22,11 @@ designed by Rivest for RSA Data Security (now RSA Security). It is a
 variablekey-size stream cipher with byte-oriented operations. The
 algorithm is based on the use of a random permutation.
 
-%description -l pl
+%description -l pl.UTF-8
 Prosta implementacja algorytmu RC4. RC4 jest szyfrem strumieniowym
 opracowanym przez Rivesta dla RSA Data Security (teraz RSA Security).
-Jest to szyfr strumieniowy o zmiennej d≥ugo∂ci klucza z operacjami
-zorientowanymi na bajty. Bazuje na uøywaniu losowych permutacji.
+Jest to szyfr strumieniowy o zmiennej d≈Çugo≈õci klucza z operacjami
+zorientowanymi na bajty. Bazuje na u≈ºywaniu losowych permutacji.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
